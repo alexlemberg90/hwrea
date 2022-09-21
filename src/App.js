@@ -1,10 +1,12 @@
 import './App.css';
-import Launches from "./components/launches/Launches";
+import Cars from "./components/cars/Cars";
+
+
 
 function App() {
   return (
     <div>
-<Launches/>
+        <Cars/>
     </div>
   );
 }
