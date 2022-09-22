@@ -5,7 +5,7 @@ const carServices = {
     getCars: () => axiosInstance.get(carsUrl),
     createCar: (car) => axiosInstance.post(carsUrl, car),
     getById: (id) => axiosInstance.get(`${carsUrl}/${id}`),
-    updateById: (id,car) => axiosInstance.put(`${carsUrl}/${id}`, car),
+    updateById: (id, car) => axiosInstance.put(`${carsUrl}/${id}`, car),
     deleteById: (id) => axiosInstance.delete(`${carsUrl}/${id}`)
 }
 

@@ -16,9 +16,9 @@ export default function CarForm({setCars, updateCar, setCar}) {
 
 
     const create = async (car) => {
-                const {data} = await carServices.createCar(car)
-                setCars(cars => [...cars, data])
-                reset()
+        const {data} = await carServices.createCar(car)
+        setCars(cars => [...cars, data])
+        reset()
     };
     const update = async (car) => {
         await carServices.updateById(updateCar.id, car)

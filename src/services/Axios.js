@@ -4,5 +4,6 @@ import {baseURL} from "../configs";
 
 let axiosInstance = axios.create({baseURL});
 
-export{
-axiosInstance}
+export {
+    axiosInstance
+}
