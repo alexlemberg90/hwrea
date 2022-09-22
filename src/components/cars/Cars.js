@@ -13,13 +13,13 @@ export default function Cars() {
     useEffect(() => {
         carServices.getCars().then(({data}) => setCars(data))
 
-    }, [cars])
+    }, [cars,car])
 
 
     return (
         <div>
         <div className={css.Center}>
-            <CarForm setCars={setCars} updateCar={car} cars={cars}/>
+            <CarForm setCars={setCars} updateCar={car} setCar={setCar} cars={cars}/>
         </div>
             {
                 cars.map(car => <Car key={car.id} car={car} setCars={setCars} setCar={setCar}/>)
