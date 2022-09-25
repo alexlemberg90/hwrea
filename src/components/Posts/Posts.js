@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
+import {Outlet} from "react-router-dom";
 
 import {plaseHolderServices} from "../../services";
 import Post from "./Post";
-import {Outlet} from "react-router-dom";
 
 
 export default function Posts() {
