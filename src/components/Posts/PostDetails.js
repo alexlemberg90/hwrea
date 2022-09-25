@@ -7,16 +7,15 @@ import {plaseHolderServices} from "../../services";
 export default function PostDetails() {
     let [post, setPost] = useState(null)
     let {id} = useParams()
-    console.log(id)
+    console.log(post && post)
     useEffect(() => {
-
         plaseHolderServices.getCommentsPosts(id).then(({data}) => {
             setPost(data)
         })
     }, [id])
 
     return (<div>
-           Title - {post && post.title}
+           Body - {post && post.body}
         </div>
     );
 }
