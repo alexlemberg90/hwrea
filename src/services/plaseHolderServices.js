@@ -6,7 +6,7 @@ const plaseHolderServices = {
     getAlbums: () => axiosInstance.get(albumsUrl),
     getComments: () => axiosInstance.get(commentsUrl),
     getPosts: () => axiosInstance.get(postsUrl),
-    getCommentsPosts: (id) => axiosInstance.get(postsUrl + '/' + id)
+    getPostsComments: (id) => axiosInstance.get(postsUrl + '/' + id + commentsUrl)
 }
 
 export {
